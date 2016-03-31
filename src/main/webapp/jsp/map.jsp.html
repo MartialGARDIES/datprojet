@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 100%; }
+    </style>
+    <title> Carte | L'Eau qui germe </title>
+    <meta charset=UTF-8></meta>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="icon" href="img/eau.ico" />
+     <script src="js/carte.js" type="application/javascript"></script>
+  </head>
+
+
+
+<body>
+	
+<!-- NAVIGATION -->
+	
+<header>
+	<%@include file="nav.jsp" %>
+</header>
+
+
+<span id="globalcontent">
+
+
+
+    <div id="explication">
+
+      <p> Voici une carte intéractive avec les différents villages où l'association mène des actions. Cliquez sur les points rouges pour plus d'informations!</p>
+
+
+    </div>
+
+
+
+   <div id="map">
+
+
+
+
+   </div> 
+
+
+       <div class="information">
+
+          <div class="infotitre">Maka Toubé</div>
+
+          <img class="imginfo" src="img/makatoube.jpg">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus nibh, hendrerit cursus auctor eget, euismod a dui. Duis interdum sapien sit amet gravida vestibulum. Vestibulum cursus est porttitor tortor accumsan, vestibulum fringilla odio dictum. Nullam ac mauris eros. Vestibulum lobortis euismod sem nec fringilla. Nullam nec eros faucibus, faucibus nisl a, dignissim diam. In hac habitasse platea dictumst. Quisque in consequat diam. Phasellus sed urna suscipit, consectetur neque eget, varius nisi.</p>
+
+          <input type="button" id="fermer" value="Fermer" />
+
+
+        </div>
+
+         <div class="information">
+
+          <div class="infotitre">Autre village</div>
+
+          <img class="imginfo" src="img/autrevillage.jpg">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus nibh, hendrerit cursus auctor eget, euismod a dui. Duis interdum sapien sit amet gravida vestibulum. Vestibulum cursus est porttitor tortor accumsan, vestibulum fringilla odio dictum. Nullam ac mauris eros. Vestibulum lobortis euismod sem nec fringilla. Nullam nec eros faucibus, faucibus nisl a, dignissim diam. In hac habitasse platea dictumst. Quisque in consequat diam. Phasellus sed urna suscipit, consectetur neque eget, varius nisi.</p>
+
+          <input type="button" id="fermer2" value="Fermer" />
+
+
+        </div>
+
+   
+
+   
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArsEhSre8WGWT-ajKr1ERUvEf-WJpL3sQ&callback=initMap">
+    </script>
+
+</span>
+
+<footer id="footcarte">
+
+
+	<table> <tr> 
+      <th> <a href="www.leauquigerme.com/apropos/"> A Propos </a>  </th> 
+      <th> <a href="www.leauquigerme.com/carte"> Carte </a>        </th>
+      <th> <a href="www.leauquigerme.com/contact"> Contact </a>    </th>
+      <th> <a href="www.leauquigerme.com/don"> Faire un don </a>   </th> 
+    </tr>
+    <tr> 
+      <td> <a href="www.leauquigerme.com/axesdetravail"> Axes de travail </a> </td>
+      <td> <a href="www.leauquigerme.com/carte"> Carte </a>                    </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td> <a href="www.leauquigerme.com/actions"> Nos actions </a>      </td>
+      <td> <a href="www.leauquigerme.com/table"> Tableau descriptif </a> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+
+
+	<div id="rectangle"></div>
+
+
+</footer>
+
+
+  </body>
+</html>
